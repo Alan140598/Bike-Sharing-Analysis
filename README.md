@@ -1,19 +1,19 @@
 # Bike-Sharing-Analysis
-==========================
-Bike Sharing Dataset
-==========================
+==========================<br>
+**Bike Sharing Dataset**
+==========================<br>
 
-Hadi Fanaee-T
+Hadi Fanaee-T<br>
 
-Laboratory of Artificial Intelligence and Decision Support (LIAAD), University of Porto
-INESC Porto, Campus da FEUP
-Rua Dr. Roberto Frias, 378
-4200 - 465 Porto, Portugal
+Laboratory of Artificial Intelligence and Decision Support (LIAAD), University of Porto<br>
+INESC Porto, Campus da FEUP<br>
+Rua Dr. Roberto Frias, 378<br>
+4200 - 465 Porto, Portugal<br>
 
 
-=========================================
-Background 
-=========================================
+=========================================<br>
+**Background**
+=========================================<br>
 
 Bike sharing systems are new generation of traditional bike rentals where whole process from membership, rental and return 
 back has become automatic. Through these systems, user is able to easily rent a bike from a particular position and return 
@@ -27,87 +27,87 @@ of travel, departure and arrival position is explicitly recorded in these system
 a virtual sensor network that can be used for sensing mobility in the city. Hence, it is expected that most of important
 events in the city could be detected via monitoring these data.
 
-=========================================
-Data Set
-=========================================
+=========================================<br>
+**Data Set**
+=========================================<br>
 Bike-sharing rental process is highly correlated to the environmental and seasonal settings. For instance, weather conditions,
 precipitation, day of week, season, hour of the day, etc. can affect the rental behaviors. The core data set is related to  
 the two-year historical log corresponding to years 2011 and 2012 from Capital Bikeshare system, Washington D.C., USA which is 
 publicly available in http://capitalbikeshare.com/system-data. We aggregated the data on two hourly and daily basis and then 
 extracted and added the corresponding weather and seasonal information. Weather information are extracted from http://www.freemeteo.com. 
 
-=========================================
-Associated tasks
-=========================================
+=========================================<br>
+**Associated tasks**
+=========================================<br>
 
-	- Regression: 
-		Predication of bike rental count hourly or daily based on the environmental and seasonal settings.
+	- Regression:<br> 
+		Predication of bike rental count hourly or daily based on the environmental and seasonal settings.<br>
 	
-	- Event and Anomaly Detection:  
-		Count of rented bikes are also correlated to some events in the town which easily are traceable via search engines.
+	- Event and Anomaly Detection:<br>  
+		Count of rented bikes are also correlated to some events in the town which easily are traceable via search engines.<br>
 		For instance, query like "2012-10-30 washington d.c." in Google returns related results to Hurricane Sandy. Some of the important events are 
-		identified in [1]. Therefore the data can be used for validation of anomaly or event detection algorithms as well.
+		identified in [1]. Therefore the data can be used for validation of anomaly or event detection algorithms as well.<br>
 
 
-=========================================
-Files
-=========================================
+=========================================<br>
+**Files**
+=========================================<br>
 
-	- Readme.txt
-	- hour.csv : bike sharing counts aggregated on hourly basis. Records: 17379 hours
-	- day.csv - bike sharing counts aggregated on daily basis. Records: 731 days
+	- Readme.txt<br>
+	- hour.csv : bike sharing counts aggregated on hourly basis. Records: 17379 hours<br>
+	- day.csv - bike sharing counts aggregated on daily basis. Records: 731 days<br>
 
 	
-=========================================
-Dataset characteristics
-=========================================	
-Both hour.csv and day.csv have the following fields, except hr which is not available in day.csv
+=========================================<br>
+**Dataset characteristics**
+=========================================<br>	
+Both hour.csv and day.csv have the following fields, except hr which is not available in day.csv<br>
 	
-	- instant: record index
-	- dteday : date
-	- season : season (1:springer, 2:summer, 3:fall, 4:winter)
-	- yr : year (0: 2011, 1:2012)
-	- mnth : month ( 1 to 12)
-	- hr : hour (0 to 23)
-	- holiday : weather day is holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule)
-	- weekday : day of the week
-	- workingday : if day is neither weekend nor holiday is 1, otherwise is 0.
-	+ weathersit : 
-		- 1: Clear, Few clouds, Partly cloudy, Partly cloudy
-		- 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
-		- 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
-		- 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
-	- temp : Normalized temperature in Celsius. The values are divided to 41 (max)
-	- atemp: Normalized feeling temperature in Celsius. The values are divided to 50 (max)
-	- hum: Normalized humidity. The values are divided to 100 (max)
-	- windspeed: Normalized wind speed. The values are divided to 67 (max)
-	- casual: count of casual users
-	- registered: count of registered users
-	- cnt: count of total rental bikes including both casual and registered
+	- instant: record index<br>
+	- dteday : date<br>
+	- season : season (1:springer, 2:summer, 3:fall, 4:winter)<br>
+	- yr : year (0: 2011, 1:2012)<br>
+	- mnth : month ( 1 to 12)<br>
+	- hr : hour (0 to 23)<br>
+	- holiday : weather day is holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule)<br>
+	- weekday : day of the week<br>
+	- workingday : if day is neither weekend nor holiday is 1, otherwise is 0.<br>
+	+ weathersit :<br> 
+		- 1: Clear, Few clouds, Partly cloudy, Partly cloudy<br>
+		- 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist<br>
+		- 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds<br>
+		- 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog<br>
+	- temp : Normalized temperature in Celsius. The values are divided to 41 (max)<br>
+	- atemp: Normalized feeling temperature in Celsius. The values are divided to 50 (max)<br>
+	- hum: Normalized humidity. The values are divided to 100 (max)<br>
+	- windspeed: Normalized wind speed. The values are divided to 67 (max)<br>
+	- casual: count of casual users<br>
+	- registered: count of registered users<br>
+	- cnt: count of total rental bikes including both casual and registered<br>
 	
-=========================================
-License
-=========================================
-Use of this dataset in publications must be cited to the following publication:
+=========================================<br>
+**License**
+=========================================<br>
+Use of this dataset in publications must be cited to the following publication:<br>
 
-[1] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3.
+[1] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3.<br>
 
-@article{
-	year={2013},
-	issn={2192-6352},
-	journal={Progress in Artificial Intelligence},
-	doi={10.1007/s13748-013-0040-3},
-	title={Event labeling combining ensemble detectors and background knowledge},
-	url={http://dx.doi.org/10.1007/s13748-013-0040-3},
-	publisher={Springer Berlin Heidelberg},
-	keywords={Event labeling; Event detection; Ensemble learning; Background knowledge},
-	author={Fanaee-T, Hadi and Gama, Joao},
-	pages={1-15}
-}
+@article{<br>
+	year={2013},<br>
+	issn={2192-6352},<br>
+	journal={Progress in Artificial Intelligence},<br>
+	doi={10.1007/s13748-013-0040-3},<br>
+	title={Event labeling combining ensemble detectors and background knowledge},<br>
+	url={http://dx.doi.org/10.1007/s13748-013-0040-3},<br>
+	publisher={Springer Berlin Heidelberg},<br>
+	keywords={Event labeling; Event detection; Ensemble learning; Background knowledge},<br>
+	author={Fanaee-T, Hadi and Gama, Joao},<br>
+	pages={1-15}<br>
+}<br>
 
-=========================================
-Contact
-=========================================
+=========================================<br>
+**Contact**
+=========================================<br>
 	
-For further information about this dataset please contact Hadi Fanaee-T (hadi.fanaee@fe.up.pt)
+For further information about this dataset please contact Hadi Fanaee-T (hadi.fanaee@fe.up.pt)<br>
 
