@@ -1,5 +1,4 @@
 # Bike-Sharing-Analysis
-Data analysis using Python
 ==========================================
 Bike Sharing Dataset
 ==========================================
