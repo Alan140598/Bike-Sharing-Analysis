@@ -1,6 +1,6 @@
 # Bike-Sharing-Analysis
 ==========================<br>
-**Bike Sharing Dataset**
+**Bike Sharing Dataset**<br>
 ==========================<br>
 
 Hadi Fanaee-T<br>
@@ -12,7 +12,7 @@ Rua Dr. Roberto Frias, 378<br>
 
 
 =========================================<br>
-**Background**
+**Background**<br>
 =========================================<br>
 
 Bike sharing systems are new generation of traditional bike rentals where whole process from membership, rental and return 
@@ -28,7 +28,7 @@ a virtual sensor network that can be used for sensing mobility in the city. Henc
 events in the city could be detected via monitoring these data.
 
 =========================================<br>
-**Data Set**
+**Data Set**<br>
 =========================================<br>
 Bike-sharing rental process is highly correlated to the environmental and seasonal settings. For instance, weather conditions,
 precipitation, day of week, season, hour of the day, etc. can affect the rental behaviors. The core data set is related to  
@@ -37,7 +37,7 @@ publicly available in http://capitalbikeshare.com/system-data. We aggregated the
 extracted and added the corresponding weather and seasonal information. Weather information are extracted from http://www.freemeteo.com. 
 
 =========================================<br>
-**Associated tasks**
+**Associated tasks**<br>
 =========================================<br>
 
 	- Regression:<br> 
@@ -50,7 +50,7 @@ extracted and added the corresponding weather and seasonal information. Weather 
 
 
 =========================================<br>
-**Files**
+**Files**<br>
 =========================================<br>
 
 	- Readme.txt<br>
@@ -59,7 +59,7 @@ extracted and added the corresponding weather and seasonal information. Weather 
 
 	
 =========================================<br>
-**Dataset characteristics**
+**Dataset characteristics**<br>
 =========================================<br>	
 Both hour.csv and day.csv have the following fields, except hr which is not available in day.csv<br>
 	
@@ -86,7 +86,7 @@ Both hour.csv and day.csv have the following fields, except hr which is not avai
 	- cnt: count of total rental bikes including both casual and registered<br>
 	
 =========================================<br>
-**License**
+**License**<br>
 =========================================<br>
 Use of this dataset in publications must be cited to the following publication:<br>
 
