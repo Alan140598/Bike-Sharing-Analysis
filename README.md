@@ -106,7 +106,7 @@ Use of this dataset in publications must be cited to the following publication:<
 }<br>
 
 =========================================<br>
-**Contact**
+**Contact**<br>
 =========================================<br>
 	
 For further information about this dataset please contact Hadi Fanaee-T (hadi.fanaee@fe.up.pt)<br>
