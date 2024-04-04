@@ -40,22 +40,22 @@ extracted and added the corresponding weather and seasonal information. Weather 
 **Associated tasks**<br>
 =========================================<br>
 
-	- Regression:<br> 
-		Predication of bike rental count hourly or daily based on the environmental and seasonal settings.<br>
+	- Regression:
+		Predication of bike rental count hourly or daily based on the environmental and seasonal settings.
 	
-	- Event and Anomaly Detection:<br>  
-		Count of rented bikes are also correlated to some events in the town which easily are traceable via search engines.<br>
+	- Event and Anomaly Detection:
+		Count of rented bikes are also correlated to some events in the town which easily are traceable via search engines.
 		For instance, query like "2012-10-30 washington d.c." in Google returns related results to Hurricane Sandy. Some of the important events are 
-		identified in [1]. Therefore the data can be used for validation of anomaly or event detection algorithms as well.<br>
+		identified in [1]. Therefore the data can be used for validation of anomaly or event detection algorithms as well.
 
 
 =========================================<br>
 **Files**<br>
 =========================================<br>
 
-	- Readme.txt<br>
-	- hour.csv : bike sharing counts aggregated on hourly basis. Records: 17379 hours<br>
-	- day.csv - bike sharing counts aggregated on daily basis. Records: 731 days<br>
+	- Readme.txt
+	- hour.csv : bike sharing counts aggregated on hourly basis. Records: 17379 hours
+	- day.csv - bike sharing counts aggregated on daily basis. Records: 731 days
 
 	
 =========================================<br>
@@ -63,27 +63,27 @@ extracted and added the corresponding weather and seasonal information. Weather 
 =========================================<br>	
 Both hour.csv and day.csv have the following fields, except hr which is not available in day.csv<br>
 	
-	- instant: record index<br>
-	- dteday : date<br>
-	- season : season (1:springer, 2:summer, 3:fall, 4:winter)<br>
-	- yr : year (0: 2011, 1:2012)<br>
-	- mnth : month ( 1 to 12)<br>
-	- hr : hour (0 to 23)<br>
-	- holiday : weather day is holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule)<br>
-	- weekday : day of the week<br>
-	- workingday : if day is neither weekend nor holiday is 1, otherwise is 0.<br>
-	+ weathersit :<br> 
-		- 1: Clear, Few clouds, Partly cloudy, Partly cloudy<br>
-		- 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist<br>
-		- 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds<br>
-		- 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog<br>
-	- temp : Normalized temperature in Celsius. The values are divided to 41 (max)<br>
-	- atemp: Normalized feeling temperature in Celsius. The values are divided to 50 (max)<br>
-	- hum: Normalized humidity. The values are divided to 100 (max)<br>
-	- windspeed: Normalized wind speed. The values are divided to 67 (max)<br>
-	- casual: count of casual users<br>
-	- registered: count of registered users<br>
-	- cnt: count of total rental bikes including both casual and registered<br>
+	- instant: record index
+	- dteday : date
+	- season : season (1:springer, 2:summer, 3:fall, 4:winter)
+	- yr : year (0: 2011, 1:2012)
+	- mnth : month ( 1 to 12)
+	- hr : hour (0 to 23)
+	- holiday : weather day is holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule)
+	- weekday : day of the week
+	- workingday : if day is neither weekend nor holiday is 1, otherwise is 0.
+	+ weathersit : 
+		- 1: Clear, Few clouds, Partly cloudy, Partly cloudy
+		- 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
+		- 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
+		- 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
+	- temp : Normalized temperature in Celsius. The values are divided to 41 (max)
+	- atemp: Normalized feeling temperature in Celsius. The values are divided to 50 (max)
+	- hum: Normalized humidity. The values are divided to 100 (max)
+	- windspeed: Normalized wind speed. The values are divided to 67 (max)
+	- casual: count of casual users
+	- registered: count of registered users
+	- cnt: count of total rental bikes including both casual and registered
 	
 =========================================<br>
 **License**<br>
